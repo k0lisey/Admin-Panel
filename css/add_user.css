@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    color: #F8F8F8;
+    font-family: 'Roboto';
+
+}
+
+.content_add {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.left_panel {
+    background-color: rgba(0, 0, 0, 0.08);
+    height: 100%;
+    width: auto;
+    z-index: 22;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.4);
+    min-width: 300px;
+    padding: 20px;
+}
+
+.left_panel a{
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #F8F8F8;
+}
+
+.flex{
+    display: flex;
+}
+
+.align-items{
+    align-items: center;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.persona {
+    padding: 30px 0px 30px 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.persona:hover {
+    background-color: #0d0d0d;
+}
+
+.persona h1 {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.persona h1#Coder{
+    color: #483D8B;
+}
+
+.persona h1#Admin{
+    color: #ec2d35;
+}
+
+.persona h1#Moder{
+    color: #2DAF4A;
+}
+
+.persona p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.persona p i {
+    font-size: 6px;
+    margin-right: 5px;
+    color: lime;
+}
+
+.info_db {
+    padding: 30px 0px 30px 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.info_db:hover {
+    background-color: #0d0d0d;
+}
+
+.info_db h1 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.info_db p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 13px;
+    padding-left: 20px;
+}
+
+.info_db p b{
+    color: #ffc107;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.action_user a,
+.action_key a {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.action_user a:hover,
+.action_key a:hover {
+    background-color: #0d0d0d;
+}
+
+.action_user a.active,
+.action_key a.active {
+    background-color: #080808;
+}
+
+.action_user a i,
+.action_key a i {
+    color: #F8F8F8;
+}
+
+#bug{
+    margin-top: 10px;
+}
+#bug a.bug{
+    display: inline-block;
+    border-bottom: 1px dotted #fff;
+    font-size: 13px;
+}
+
+#bug a.bug:hover{
+    border-bottom: none;
+}
+
+.main_panel {
+    margin: 0px 30px 0px 50px;
+    width: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.08);
+    z-index: 22;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+.add_user_main_panel {
+    margin: 0px 30px 0px 50px;
+    height: auto;
+    z-index: 22;
+    padding: 20px;
+}
+
+.main_panel h1, .add_user_main_panel h1 {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.user-list {
+    background-color: rgba(0, 0, 0, 0.08);
+    height: auto;
+    z-index: 1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.custom {
+    width: 100%;
+    height: auto;
+}
+
+.custom td,
+.custom th {
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.custom th {
+    font-weight: 500;
+}
+
+.custom tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn {
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-edit {
+    background-color: #03bafc;
+}
+
+.btn-edit:hover {
+    background-color: #0089ba;
+}
+
+.btn-delete {
+    background-color: #fc1c03;
+}
+
+.btn-delete:hover {
+    background-color: #c31400;
+}
+
+.btn-copy {
+    background-color: #28a745;
+}
+
+.btn-copy:hover {
+    background-color: #1f8035;
+}
+
+.add_btn{
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #28a745;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add_btn:hover{
+    background: #1f8035;
+}
+
+.btn-ban{
+    background-color: orange;
+}
+.btn-ban:hover{
+    background-color: darkorange;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.header .title {
+    min-width: 230px;
+    margin-right: 20px;
+}
+
+.header .ban-title{
+    min-width: 350px;
+    margin-right: 20px;
+}
+
+input[type=text], select {
+    padding: 12px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #F8F8F8;
+    z-index: 999;
+}
+
+option{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.header input[type=text]{
+    width: auto;
+}
+
+.credits {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 20px 20px;
+    width: 100%;
+    z-index: 111;
+    min-width: 300px;
+}
+
+.credits span {
+    color: gray;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.credits a {
+    color: gray;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.credits a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+.typed-cursor {
+    opacity: 1;
+    font-weight: 200;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.rank {
+    padding: 5px 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.rank#Admin{
+    background: #ec2d35;
+}
+.rank#Coder{
+    background: #483D8B;
+}
+.rank#Moder{
+    background: green;
+}
+.rank#User{
+    background-color: #0089ba;
+}
+
+.add_users{
+    background-color: rgba(0, 0, 0, 0.08);
+    height: auto;
+    width: auto;
+    z-index: 22;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.add_users div{
+    margin-bottom: 10px;
+}
+
+.add_users h1{
+    margin-right: auto;
+}
+
+.add_users input{
+    margin-left: 20px;
+}
+
+#alert{
+    margin: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #e74c3c;
+    border-radius: 5px;
+    top: 0; bottom: 0; right: 0; left: 0;
+    position: fixed;
+    z-index: 999;
+    max-height: 100px;
+    max-width: 340px;
+    height: auto;
+    width: auto;
+    color: #fff;
+}
+#alert i{
+    font-size: 26px;
+    margin-left: 20px;
+}
+#alert p{
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 20px;
+}
